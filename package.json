@@ -1,15 +1,15 @@
 {
-  "name": "corsproxy",
-  "description": "standalone CORS proxy and library for your convenience",
+  "name": "CorpusWebService",
+  "description": "Wraps CouchDB in CORS proxy and library for your convenience",
   "version": "0.2.9",
   "main": "./lib/corsproxy.js",
   "author": {
-    "name": "Gregor Martynus",
-    "email": "gregor@martynus.net"
+    "name": "OpenSourceFieldLinguistics",
+    "email": "opensource@fielddb.org"
   },
   "contributors": {
-    "name": "Jan Lehnardt",
-    "email": "jan@apache.org"
+    "name": "Cesine",
+    "email": "cesine@yahoo.com"
   },
   "dependencies": {
     "http-proxy": "~0.8"
@@ -23,6 +23,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gr2m/CORS-Proxy"
+    "url": "https://github.com/OpenSourceFieldlinguistics/CorpusWebService"
   }
 }
