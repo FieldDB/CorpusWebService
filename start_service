@@ -8,4 +8,4 @@ start \
 -al $HOME/fielddbworkspace/logs/fielddbcorpus.log \
 -ao $HOME/fielddbworkspace/logs/fielddbcorpusout.log \
 -ae $HOME/fielddbworkspace/logs/fielddbcorpuserr.log \
-service.js
+bin/onlycouchdb.js localhost 3186
