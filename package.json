@@ -1,7 +1,7 @@
 {
   "name": "CorpusWebService",
   "description": "Wraps CouchDB in CORS proxy and library for your convenience",
-  "version": "0.2.9",
+  "version": "2.42.13",
   "main": "./lib/corsproxy.js",
   "author": {
     "name": "OpenSourceFieldLinguistics",
@@ -12,8 +12,8 @@
     "email": "cesine@yahoo.com"
   },
   "dependencies": {
-    "http-proxy": "~0.8"
-    ,"forever":"latest"
+    "http-proxy": "~0.8",
+    "forever": "latest"
   },
   "bin": {
     "couchdbproxy": "./bin/onlycouchdb.js"
