@@ -1,4 +1,4 @@
-//#!/usr/bin/env node
+#!/usr/bin/env node
 var corsproxy = require("../lib/corsproxy");
 var httpProxy = require("http-proxy");
 /* Edited README to show that the target is not supposed to be an object, but rather a well formed url for a couchdb etc */
