@@ -3,6 +3,9 @@
 cd $FIELDDB_HOME/CorpusWebService
 bash switch_to_producti.sh 
 
-pm2 \
+$FIELDDB_HOME/CorpusWebService/node_modules/forever/bin/forever \
 start \
+-al $FIELDDB_HOME/logs/fielddbcorpus.log \
+-ao $FIELDDB_HOME/logs/fielddbcorpusout.log \
+-ae $FIELDDB_HOME/logs/fielddbcorpuserr.log \
 bin/onlycouchdb.js localhost 3186
