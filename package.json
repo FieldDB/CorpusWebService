@@ -4,7 +4,7 @@
   "version": "2.42.13",
   "main": "./lib/corsproxy.js",
   "author": {
-    "name": "OpenSourceFieldLinguistics",
+    "name": "FieldDB",
     "email": "opensource@fielddb.org"
   },
   "contributors": {
@@ -12,8 +12,17 @@
     "email": "cesine@yahoo.com"
   },
   "dependencies": {
-    "http-proxy": "~0.8",
-    "forever": "latest"
+    "http-proxy": "0.8.7",
+    "forever": "0.15.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "scripts": {
+    "test": "HOST=${HOST:-localhost} PORT=${PORT:-3186} NODE_ENV=test mocha test/**/*-spec.js",
+    "start": "bin/onlycouchdb.js localhost 3186"
   },
   "bin": {
     "couchdbproxy": "./bin/onlycouchdb.js"
@@ -24,6 +33,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpenSourceFieldlinguistics/CorpusWebService"
+    "url": "https://github.com/FieldDB/CorpusWebService"
   }
 }
